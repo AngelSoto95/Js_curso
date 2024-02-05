@@ -15,10 +15,15 @@ var lenguajes = new Array("PHP","jS", "Go", "Java", "c#", "Python");
 // }
 //alert(nombres[elemento]);
 
-document.write("<h1>Lenguajes de programación del 2018</h1>");
-document.write("<ul>");
-for(var i = 0; i < lenguajes.length; i++){
-    document.write("<li>" + lenguajes[i] + "</li>");
-}
+// document.write("<h1>Lenguajes de programación del 2018</h1>");
+// document.write("<ul>");
+// for(var i = 0; i < lenguajes.length; i++){
+//     document.write("<li>" + lenguajes[i] + "</li>");
+// }
+
+lenguajes.forEach((elemento, indice)=>{
+    console.log(arr);
+    document.write("<li>" + indice + " . " + elemento + "</li>");
+})
 
 document.write("</ul>");
