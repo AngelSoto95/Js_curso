@@ -5,7 +5,7 @@
 var nombre = "Angel Soto";
 var nombres = ["angel soto", "Juan Soto", "Yesica Soto", 56 , 76, true];
 
-var lenguajes = new Array("PHP","jS", "Go", "Java", "c#", "Python");
+var lenguajes = new Array("PHP","JS", "Go", "Java", "C#", "Python");
 
 // var elemento = parseInt(prompt("Que elemento del array quieres?", 0));
 // if(elemento >= nombres.length){
@@ -21,9 +21,22 @@ var lenguajes = new Array("PHP","jS", "Go", "Java", "c#", "Python");
 //     document.write("<li>" + lenguajes[i] + "</li>");
 // }
 
-lenguajes.forEach((elemento, indice)=>{
-    console.log(arr);
-    document.write("<li>" + indice + " . " + elemento + "</li>");
-})
+// lenguajes.forEach((elemento, indice)=>{
+//     console.log(arr);
+//     document.write("<li>" + indice + " . " + elemento + "</li>");
+// })
+
+for(let lenguaje in lenguajes){
+    document.write("<li>" + lenguajes[lenguaje] +"</li>");
+}
 
 document.write("</ul>");
+
+//busquedas
+var precios = [12,24,56,34];
+
+var busqueda = precios.some(precio => precio >= 58);
+
+//var busqueda = lenguajes.find(lenguaje => lenguaje == "PHP");
+
+console.log(busqueda);
